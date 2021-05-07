@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Codificación para abogados: Nivel Avanzado</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-white">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-blue-grey">
+  <!-- Avatar image in top left corner -->
+  <a href="https://www.uexternado.edu.co/" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <img src="https://www.uexternado.edu.co/wp-content/themes/externado_theme/images/logo-uec.svg" class="w3-xxlarge" alt="UEC" style="width:100%;height:300%"></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>INICIO</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fas fa-chalkboard-teacher w3-xxlarge"></i>
+    <p>CURSO</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fab fa-python w3-xxlarge"></i>
+    <p>PYTHON</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-blue-grey">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACTO</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button w3-black" style="width:25% !important">INICIO</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">CURSO</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PYTHON</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACTO</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-light-grey" id="home">
+    <span class="w3-large w3-text-blue-grey w3-hide-small">Universidad Externado de Colombia</span>
+    <h1 class="w3-xxlarge w3-text-blue-grey"> Seminario de Programación</h1>
+    <p class="w3-xlarge w3-text-blue-grey"> Semestre 2</p>
+    <p>Maestría en Inteligencia de Negocios</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-blue-grey">OBJETIVOS</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-blue-grey" >Como resultado del desarrollo de las actividades de la clase, se espera que el estudiante esté en capacidad de realizar rutinas en Python para: </p>
+    <ul>
+      <li>Integrar, limpiar, tratar y estructurar datos provenientes de diferentes fuentes de información.</li>
+      <li>Generar reportes interactivos y recursos visuales a partir de diferentes bases de datos. </li>
+      <li>Crear simulaciones y modelos matemáticos estocásticos para hacer inferencia.  </li>
+    </ul>
+    <h2 class="w3-padding-16 w3-text-blue-grey">UNIDADES TEMÁTICAS</h2>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> REVISIÓN DE PAQUETES ELEMENTALES PARA EL ANÁLISIS DE DATOS EN PYTHON.</p>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> EXPLORACIÓN Y VISUALIZACIÓN DE DATOS</p>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> INTRODUCCIÓN A LA SIMULACIÓN</p>
+    <p class="w3-wide"><i class="far fa-file-alt "></i> DESARROLLO Y DESPLIEGUE DE MODELOS DE MACHINE LEARNING</p>
+    <h2 class="w3-text-blue-grey">MATERIALES y EVALUACIONES</h2>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
+      <a href="#photos">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xxlarge"><i class="fab fa-python"></i></span><br>
+        Cuadernos Python
+      </div>
+      </a>
+
+      <a href="#casos">
+        <div class="w3-quarter w3-section">
+        <span class="w3-xxlarge"><i class="fas fa-folder-open"></i></span><br>
+        Casos de estudio
+        </div>
+      </a>
+
+      <a href="#quiz">
+        <div class="w3-quarter w3-section">
+        <span class="w3-xxlarge"><i class="fas fa-tasks"></i></span><br>
+        Talleres
+      </div>
+      </a>
+      <a href="#proyecto">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xxlarge"><i class="fas fa-project-diagram"></i></span><br>
+        Proyecto final
+      </div>
+       </a>
+
+
+
+
+
+    </div>
+
+    <a href="files/MINE-Seminario de programación.pdf">
+      <button class="w3-button w3-light-grey  w3-section">
+        <i class="fa fa-download"></i> Descarga Programa del Curso
+      </button>
+    </a>
+  </div>
+
+   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="photos">
+    <h3 class="w3-padding-16 w3-text-blue-grey">CUADERNOS PYTHON</h3>
+<p>Una lista con los diferentes cuadernos que han desarrollado para el curso. </p>
+<div class="row">
+  <a href="Cuadernos/Curso%20Python%20Básico/Instalación%20y%20configuración%20inicial%20de%20Anaconda.ipynb">
+  <div class="column">
+    <div class="card w3-hover-blue-grey w3-padding-64" >
+      <h3 class="w3-medium" ><b>Instalación Anaconda*</b></h3>
+    </div>
+  </div>
+  </a>
+
+    <a href="Cuadernos/Curso%20Python%20Básico/Introducción%20al%20lenguaje%20Python.ipynb">
+  <div class="column">
+    <div class="card w3-hover-blue-grey w3-padding-64 " >
+      <h3 class="w3-medium" ><b>Introducción a Python*</b></h3>
+    </div>
+  </div>
+    </a>
+    <a href="Cuadernos/Curso%20Python%20Básico/Listas%20y%20arreglos%20de%20Python.ipynb">
+  <div class="column">
+    <div class="card w3-hover-blue-grey w3-padding-64" >
+      <h3 class="w3-medium" ><b>Listas y arreglos</b></h3>
+    </div>
+  </div>
+      </a>
+
+    <a href="Cuadernos/Curso%20Python%20Básico/Funciones%20y%20paquetes.ipynb">
+   <div class="column">
+    <div class="card w3-hover-blue-grey w3-padding-64" >
+      <h3 class="w3-medium" ><b>Funciones y paquetes</b></h3>
+    </div>
+  </div>
+      </a>
+
+    <a href="Cuadernos/Curso%20Python%20Básico/Clases%20y%20Módulos.ipynb">
+   <div class="column">
+    <div class="card w3-hover-blue-grey w3-padding-64" >
+      <h3 class="w3-medium" ><b>Clases y módulos</b></h3>
+    </div>
+  </div>
+      </a>
+
+    <a href="Cuadernos/Curso%20Python%20Básico/Mi%20clase%20fracciones.ipynb">
+      <div class="column">
+    <div class="card w3-hover-blue-grey w3-padding-64" >
+      <h3 class="w3-medium" ><b>Ejemplo - Clase</b></h3>
+    </div>
+  </div>
+      </a>
+      </div>
+ </div>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64"  id="casos">
+    <!-- Casos tables -->
+    <h2 class="w3-blue-grey">CASOS DE ESTUDIO</h2>
+    <p> Información proximamente...</p>
+
+    <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+
+  <!-- End Portfolio Section -->
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="quiz">
+      <h2 class="w3-blue-grey">TALLERES</h2>
+    <p> Información proximamente...</p>
+</div>
+
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="proyecto">
+      <h2 class="w3-blue-grey"> PROYECTO FINAL</h2>
+      <p> Información proximamente...</p>
+</div>
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64"  id="contact">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">DOCENTE</span>
+    </div>
+
+    <div class=" w3-row w3-margin-bottom">
+      <div class=" w3-third w3-card-4" >
+        <img src="https://www.uexternado.edu.co/wp-content/uploads/2020/02/150.jpg" alt="Isaac Zainea" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-medium">Carlos Isaac Zainea Maya</h3>
+          <p class="w3-opacity">Matemático</p>
+          <p style="height: 150px"> <i>Intereses: </i> Topología de datos, Teoría de representaciones, Inteligencia artificial, Minería de datos, Teoría de autómatas, Teoría de computación, Álgebra geométrica.</p>
+          <p><a href="mailto:carlos.zainea@uexternado.edu.co" ><button class="w3-button w3-light-grey w3-block"> carlos.zainea@uexternado.edu.co </button></a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p class="w3-medium">Powered by <a href="https://izainea.github.io/">Isaac Zainea</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+    </div>
+</body>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</html>
+
