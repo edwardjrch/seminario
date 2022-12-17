@@ -1,6 +1,7 @@
 *Universidad Externado de Colombia*
 # Seminario de Programación
 **Semestre 2**
+**2023**
 
 ***Maestría en Inteligencia de Negocios***
 
